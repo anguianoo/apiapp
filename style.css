@@ -49,9 +49,7 @@ button:hover {
 
 .container {
   margin: 0 auto;
-  background-image: url(/images/library.jpg);
   background-size: cover;
-  color: whitesmoke;
 }
 
 .container2 {
