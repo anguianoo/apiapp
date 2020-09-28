@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  display: block;
+  color: orangered;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2,h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.tittle>h3 {
+  padding-bottom: 30px;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button.collapsible {
+  width: 200px;
+  border: 1px black solid;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 12px;
+  margin: 15px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+}
+
+.content {
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  background-image: url(/images/library.jpg);
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.container2 {
+  background-image: url();
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+/* new stuff added */
+
+#results-list{
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  border: 3px dotted black;
+  margin: 15px;
+  padding: 15px;
+  overflow-wrap: break-word;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 0;
+  align-items: center;
+}
+
+/* collapsible */
+.collapsible {
+background-color: white;
+color: black;
+  cursor: pointer;
+  
+  width: 100%;
+  border: none;
+  
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  
+}
+/* end of collapsible */
+h2,h1{
+  text-align: center;
+}
+#js-form {
+  margin: 50px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+
+  .container {
+    height: 400px;
+  }
+
+  input{
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  
+
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script:wght@700&family=Pacifico&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <title>Aime Lire</title>
+</head>
+<body>
+    <div clas="flex">
+        <div class="container flex">
+            <h1>Welcome to <span class="logo">Aime Lire</span> where you could search for books on any topic. Give it a try!</h1>
+
+            <form id="js-form">
+                <!-- <label for="search-term" >Search for a book</label> -->
+                <input type="text" name="search-term" id="js-search-term" placeholder="Type a Word, Get a Book" required>
+                <!-- <input type="submit" value="Go!"> -->
+                <button type="submit"><i class="fa fa-search"></i></button>
+                
+            </form>
+
+            
+        </div>
+        <div class="container2 flex">
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
+            <h2>Check It Out!</h2>
+            <ul id="results-list">
+            </ul>
+            </section>
+        </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
